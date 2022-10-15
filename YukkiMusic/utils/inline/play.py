@@ -12,7 +12,8 @@ import random
 from pyrogram.types import InlineKeyboardButton
 
 selections = [
-    "⋖━━━⧼⋞ 𝐎ɴᴇ 𝐋ᴏᴠᴇ 𝐌ᴜsɪᴄ ⋟⧽━━━⋗",
+         "⋖━━━⧼⋞ 𝐋ᴜʙ 💞 𝐔 💞𝐀ʟʟ⋟⧽━━━⋗",
+    
 ]
 
 
