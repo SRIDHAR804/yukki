@@ -21,10 +21,10 @@ from config import MUSIC_BOT_NAME, YOUTUBE_IMG_URL
 
 
 def changeImageSize(maxWidth, maxHeight, image):
-    widthRatio = maxWidth / image.size[0]
-    heightRatio = maxHeight / image.size[3]
-    newWidth = int(widthRatio * image.size[0])
-    newHeight = int(heightRatio * image.size[3])
+    widthRatio = maxWidth / image.size[3]
+    heightRatio = maxHeight / image.size[1]
+    newWidth = int(widthRatio * image.size[3])
+    newHeight = int(heightRatio * image.size[1])
     newImage = image.resize((newWidth, newHeight))
     return newImage
 
@@ -81,7 +81,7 @@ async def gen_thumb(videoid):
         logo = youtube.crop((x1, y1, x2, y2))
         logo.thumbnail((520, 520), Image.ANTIALIAS)
         logo = ImageOps.expand(logo, border=5, fill="white")
-        background.paste(logo, (50, 100))
+        background.paste(logo, (100, 200))
         draw = ImageDraw.Draw(background)
         font = ImageFont.truetype("assets/font2.ttf", 40)
         font2 = ImageFont.truetype("assets/font2.ttf", 70)
