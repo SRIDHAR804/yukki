@@ -75,9 +75,9 @@ async def gen_thumb(videoid):
         Xcenter = youtube.width / 2
         Ycenter = youtube.height / 2
         x1 = Xcenter - 300
-        y1 = Ycenter - 300
+        y1 = Ycenter - 500
         x2 = Xcenter + 300
-        y2 = Ycenter + 300
+        y2 = Ycenter + 500
         logo = youtube.crop((x1, y1, x2, y2))
         logo.thumbnail((520, 520), Image.ANTIALIAS)
         logo = ImageOps.expand(logo, border=5, fill="white")
