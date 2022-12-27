@@ -1,7 +1,7 @@
 #
 # Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
 #
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# This file is part of < https://jgithub.com/TeamYukki/YukkiMusicBot > project,
 # and is released under the "GNU v3.0 License Agreement".
 # Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
 #
@@ -67,9 +67,9 @@ async def gen_thumb(videoid):
                     await f.close()
 
         youtube = Image.open(f"cache/thumb{videoid}.png")
-        image1 = changeImageSize(1100, 780, youtube)
+        image1 = changeImageSize(1100, 790, youtube)
         image2 = image1.convert("RGBA")
-        background = image2.filter(filter=ImageFilter.BoxBlur(0))
+        background = image2.filter(filter=ImageFilter.BoxBlur(20))
         enhancer = ImageEnhance.Brightness(background)
         background = enhancer.enhance(0.9)
         Xcenter = youtube.width / 2
