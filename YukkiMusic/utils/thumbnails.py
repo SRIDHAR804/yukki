@@ -67,7 +67,7 @@ async def gen_thumb(videoid):
                     await f.close()
 
         youtube = Image.open(f"cache/thumb{videoid}.png")
-        image1 = changeImageSize(1000, 900, youtube)
+        image1 = changeImageSize(1000, 1000, youtube)
         image2 = image1.convert("RGBA")
         background = image2.filter(filter=ImageFilter.BoxBlur(30))
         enhancer = ImageEnhance.Brightness(background)
@@ -79,7 +79,7 @@ async def gen_thumb(videoid):
         x2 = Xcenter + 250
         y2 = Ycenter + 250
         logo = youtube.crop((x1, y1, x2, y2))
-        logo.thumbnail((520, 520), Image.ANTIALIAS)
+        logo.thumbnail((580, 580), Image.ANTIALIAS)
         logo = ImageOps.expand(logo, border=5, fill="white")
         background.paste(logo, (50, 100))
         draw = ImageDraw.Draw(background)
