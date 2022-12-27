@@ -21,7 +21,7 @@ API_ID = int(getenv("API_ID", "14569061"))
 API_HASH = getenv("API_HASH", "27cdbce9ac58e83cec07e1147d9c9e05")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "5609170691:AAFUMcOtYUg7YIIvoFe7CWj4WgUYR3xvzuo")
+BOT_TOKEN = getenv("BOT_TOKEN", "5609170691:AAF_NuD3VX1u2B-64EsOskgDPbk1iIglbNc")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Izzyanna:Izzyr123@cluster0.l0gyy3d.mongodb.net/Cluster0?retryWrites=true&w=majority")
@@ -136,7 +136,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 STRING1 = getenv("STRING_SESSION", "BQBMu3XqSG7vsRuGcbkE9oVYIwtoRYXhJyJaYvOdFiLRpRj3bv4meC1HnJ4P4c20iLVUjAtiqwXlVloGqEUY05LuWcAUMtuPK5TnT1TYVtXmHOnrcMxdPXSstHADI6D_MmnWreyXhTuNqYAzb0LsNEhewTojFsrJPDXRUiyEGiCsmY7JAe9SIG-qcxIJ1ydQvZ-Ngom2OzoiXTTSlMmCXr-QovGKLsPmbxZDN0Ea-L5HMA1RKoqOq0IAjlV59gwJv3jaG8-kwxIbPt6XsI8QTv1tPIkXBjT0gLFiCW4Aig4KLnmi4ma2vPYN7FLqZp34FpW1VBNj6llSf7M7qbbGo19pAAAAAVpuM-YA")
-STRING2 = getenv("STRING_SESSION2", "BQAAQAAO4E3baKtMAOLD29Ea0KUXNIL2W3FIgMHtZwVTZdrFJRn6snZA4RsmGadfIozi_L6EOjwHPZ7GHpSHNnhiTxC2YvaefwSA5CdBX1Q-4dRL7IyeIxQmaNW9Pq_FM01-7UkukpuH6_q6IiQhNFJYRQO0QFurm7AAX8-0GAZwB6M6WkDPQfeE1J9gX90SkvVTK_a7fk5gs6EivbdmbDBme8WMabndgBF1-0AeHh_nJn-4dnP585fNQd-zjuxBj3gfTfXMpKiBo-p9mCZZRCm0hrPxlmqleKs47jz4n2XXbqqNPX6kzYdJMd1rAGLeL-G-1EioQWhGH2-rkove8QmDAAAAATUG0NIA")
+STRING2 = getenv("STRING_SESSION2", "BQDGPfnRBfJTMK86W7zgodNv5kR6uFGdibGBGSeec4PfZHAJ4IfU9dSZLb-qq33xyoQHipfi0IDujoy-V0miHTn8z2Yyt1uQK_eIZkfppJZWaoo0dVGsKz_mPTO2XxEDC3c7rNiPg9T9jP8CmKCgyx5OFTrkmO3FYFBrDSt7Nt9KhBD6E-2N5GXpFwSisP96YqMf2hOrhBsCbKmw48MaRk-Kqd0N2sl1Zv7zuXuZ7_6KKeC4OGOvOAEjnKdb1Kgr3EyQYNtOWWfR9z51V8k-sszJyZAhWS3Ege_x3OLuiQcw2bgVojlK4a2tH54dS91q34kc5dT8YtCkiEv0niIpMpN9AAAAATUG0NIA")
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
